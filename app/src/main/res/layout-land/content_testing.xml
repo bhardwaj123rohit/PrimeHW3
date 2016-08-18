@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_testing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.rohit.test.testing"
+    tools:showIn="@layout/activity_testing">
+
+    <Button
+        android:text="@string/tru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/tbutton"
+        android:onClick="verify"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="72dp"
+        app:layout_constraintBottom_toBottomOf="@+id/content_testing"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/content_testing"
+        app:layout_constraintRight_toLeftOf="@+id/nextBtn"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toTopOf="@+id/content_testing"
+        app:layout_constraintVertical_bias="0.75"
+        app:layout_constraintHorizontal_bias="0.25"
+        android:shadowRadius="5"
+        android:background="#66bb6a"
+
+        />
+
+    <Button
+        android:text="@string/fals"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fbutton"
+        android:onClick="verify"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/content_testing"
+        android:layout_marginStart="64dp"
+        app:layout_constraintLeft_toRightOf="@+id/nextBtn"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="@+id/content_testing"
+        app:layout_constraintBottom_toBottomOf="@+id/content_testing"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintVertical_bias="0.75"
+        android:shadowRadius="5"
+        />
+
+    <TextView
+        android:text="@string/question"
+        android:layout_width="287dp"
+        android:layout_height="107dp"
+        android:id="@+id/textView"
+        android:paddingLeft="70dp"
+        android:paddingRight="50dp"
+        android:paddingTop="50dp"
+        app:layout_constraintTop_toTopOf="@+id/content_testing"
+        app:layout_constraintRight_toRightOf="@+id/content_testing"
+        app:layout_constraintLeft_toLeftOf="@+id/content_testing"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/nextBtn"
+        app:layout_constraintVertical_bias="0.65999997"
+        android:shadowRadius="5"
+        />
+
+    <Button
+        android:text="@string/nextQuestion"
+        android:layout_width="133dp"
+        android:layout_height="63dp"
+        android:id="@+id/nextBtn"
+        android:onClick="nextQ"
+        app:layout_constraintRight_toRightOf="@+id/content_testing"
+        app:layout_constraintLeft_toLeftOf="@+id/content_testing"
+        app:layout_constraintTop_toTopOf="@+id/content_testing"
+        app:layout_constraintBottom_toBottomOf="@+id/content_testing"
+        app:layout_constraintVertical_bias="0.75"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        android:shadowRadius="5"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
